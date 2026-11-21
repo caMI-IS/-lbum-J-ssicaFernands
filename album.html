@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff8ee">
+  <meta name="description" content="Um álbum cheio de momentos especiais.">
+  <title>Meu Álbum | Um Jardim de Recordações</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="album.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Voltar para a página inicial">♡ <span>Um jardim de recordações</span></a>
+    <nav aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a class="active" href="album.html">Meu álbum</a>
+    </nav>
+  </header>
+
+  <main class="album-container">
+    <section class="intro">
+      <span class="eyebrow">21 momentos especiais</span>
+      <h1>Meu álbum de lembranças</h1>
+      <p>Cada fotografia guarda um pedacinho de uma história especial. 🤎</p>
+      <div class="flourish" aria-hidden="true">✿　♡　✿</div>
+    </section>
+
+    <section id="gallery" class="gallery" aria-label="Galeria de fotografias"></section>
+
+    <p class="closing">Que a vida continue florescendo em momentos lindos. <span>🌻</span></p>
+    <a class="back-link" href="index.html">← Voltar à página inicial</a>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="closeLightbox" aria-label="Fechar imagem">×</button>
+    <button class="lightbox-arrow prev" id="prevPhoto" aria-label="Foto anterior">‹</button>
+    <figure>
+      <img id="lightboxImage" src="" alt="">
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+    <button class="lightbox-arrow next" id="nextPhoto" aria-label="Próxima foto">›</button>
+  </div>
+
+  <script src="album.js"></script>
+</body>
+</html>
