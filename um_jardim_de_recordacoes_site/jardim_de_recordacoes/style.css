@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  font-family: "DM Sans", Arial, sans-serif;
+  background: #fff8ee;
+  color: #542b0b;
+}
+
+.home-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.cover-wrap {
+  width: 100%;
+  max-width: 1800px;
+  position: relative;
+  line-height: 0;
+}
+
+.cover-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* A área clicável fica exatamente sobre o botão ilustrado na capa. */
+.cover-hotspot {
+  position: absolute;
+  left: 36.2%;
+  top: 74.2%;
+  width: 27.6%;
+  height: 10.2%;
+  border-radius: 999px;
+  cursor: pointer;
+  outline-offset: 5px;
+}
+
+.cover-hotspot:focus-visible {
+  outline: 3px solid #6e390d;
+}
+
+@media (max-width: 600px) {
+  .cover-wrap {
+    width: 100%;
+  }
+}
